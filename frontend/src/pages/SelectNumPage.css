@@ -1,0 +1,42 @@
+.container {
+    width: fit-content;
+    margin: auto;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+input {
+    height: 40px;
+    font-size: 20px;
+    border: 3px solid #0F6CBF;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #0F6CBF;
+}
+
+.choose {
+    font-weight: 500;
+}
+
+.result {
+    font-weight: 700;
+}
+
+.result-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    font-size: 20px;
+    border: 3px solid #0F6CBF;
+    margin-bottom: 100px;
+}
