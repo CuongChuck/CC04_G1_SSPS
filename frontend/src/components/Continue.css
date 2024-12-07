@@ -1,0 +1,12 @@
+.continue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F6CBF;
+    width: 50%;
+    color: white;
+    height: 40px;
+    font-size: large;
+    border-radius: 5px;
+    margin: auto;
+}
