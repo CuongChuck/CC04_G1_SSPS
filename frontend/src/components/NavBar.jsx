@@ -21,9 +21,9 @@ const NavBar = () => {
             >
                 <MenuIcon />
             </IconButton>
-            <a className="NavLink" href='#'>MAIN MENU</a>
+            <a className="NavLink" href='/'>MAIN MENU</a>
             <a className="NavLink" href='#'>PRINTING</a>
-            <a className="NavLink" href='#'>BUYING PAPER</a>
+            <a className="NavLink" href='/buy'>BUYING PAPER</a>
             <div className='IconContainer'>
                 <NotificationsIcon fontSize='large' style={{display:'flex', color:'#CED4DA'}} />
                 <ChatRoundedIcon fontSize='large' style={{color:'#CED4DA'}} />
