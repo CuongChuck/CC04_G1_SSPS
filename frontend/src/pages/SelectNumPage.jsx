@@ -19,7 +19,7 @@ const SelectNumPage = () => {
                     <span>{page * 400}</span>
                     <span>VND</span>
                 </div>
-                <Continue link={'/'} />
+                <Continue link={'/payment-method'} />
             </div>
         </div>
     )
