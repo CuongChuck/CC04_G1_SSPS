@@ -45,7 +45,7 @@ const OtpVerifying = ({ setProgIndex }) => {
           />
         ))}
       </div>
-      <Continue link={"/review"} onClick={() => setProgIndex(5)} />
+      <Continue link={"/review"} />
     </div>
   );
 };
