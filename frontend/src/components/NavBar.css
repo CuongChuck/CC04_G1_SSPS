@@ -1,84 +1,125 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import dropdownlogo from "../assets/drop_down_menu.svg";
-import userIcon from "../assets/user_icon.svg";
-import noti from "../assets/noti-bell.svg";
-import message from "../assets/message.svg";
-import "./NavBar.css";
-
-function NavBar({ username, id }) {
-  const [isActive, setActive] = useState(false);
-
-  const handleClick = (tab) => {
-    setActive(tab);
-  };
-
-  return (
-    <div className="header">
-      <nav className="navbar">
-        <div className="dropdown-mini">
-          <button className="drop-btn">
-            <img src={dropdownlogo} alt="Dropdown Menu" className="drop" />
-          </button>
-        </div>
-        {["trang chủ", "in giấy", "mua giấy"].map((tab) => {
-          if (tab === "mua giấy") {
-            return (
-              <Link
-                key={tab}
-                to="/buy"
-                className={`nav-item ${isActive === tab ? "active" : ""}`}
-              >
-                {tab.toUpperCase()}
-              </Link>
-            );
-          }
-
-          if (tab === "trang chủ") {
-            return (
-              <Link
-                key={tab}
-                to="/"
-                className={`nav-item ${isActive === tab ? "active" : ""}`}
-              >
-                {tab.toUpperCase()}
-              </Link>
-            );
-          }
-
-          return (
-            <button
-              key={tab}
-              className={`nav-item ${isActive === tab ? "active" : ""}`}
-              onClick={() => handleClick(tab)}
-            >
-              {tab.toUpperCase()}
-            </button>
-          );
-        })}
-      </nav>
-      <div className="header-right">
-        <button>
-          <img src={noti} alt="Notifications" className="noti right-item" />
-        </button>
-        <button>
-          <img src={message} alt="Messages" className="msg right-item" />
-        </button>
-        <div className="header-user-info right-item">
-          <div className="username">Tên người dùng: {username}</div>
-          <div className="user-id">Mã người dùng: {id}</div>
-        </div>
-        <button>
-          <img
-            src={userIcon}
-            alt="User Icon"
-            className="user-icon right-item"
-          />
-        </button>
-      </div>
-      <div className="spss">SPSS</div>
-    </div>
-  );
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: #008196;
+  color: #fff;
+  z-index: 500;
 }
 
-export default NavBar;
+.navbar {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  overflow: initial;
+  background-color: transparent;
+}
+.dropdown-mini {
+  width: 75px;
+  height: 100%;
+  position: relative;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  text-align: center;
+  font-weight: 700;
+  height: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  margin-right: 10px;
+}
+img {
+  height: 70%;
+  width: auto;
+  object-fit: contain;
+}
+.drop {
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  aspect-ratio: 1;
+}
+.header-right img {
+  filter: invert(80%) grayscale(1) drop-shadow(2px 2px 2px #333);
+  background-color: transparent;
+}
+.noti,
+.msg {
+  height: 40%;
+}
+.noti {
+  transform: rotate(30deg);
+}
+.header-user-info {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+.nav-item:hover {
+  background-color: white;
+  color: #008196;
+  box-shadow: 5px 5px 5px #008196;
+}
+.header-right button {
+  background: none;
+  height: 100%;
+  padding: 0;
+}
+.header-right button:hover img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.nav-item.active {
+  background-color: white;
+  color: #008196;
+  box-shadow: 4px 4px 4px #008196;
+  z-index: 600;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  outline: none;
+  border: none;
+}
+button {
+  border: none;
+}
+.spss {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 35%;
+  font-size: 2em;
+  font-weight: 900;
+  filter: drop-shadow(2px 2px 2px #000);
+  height: 100%;
+}
+.user-icon {
+  height: 60%;
+}
+.header a {
+  text-decoration: none;
+}
