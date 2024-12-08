@@ -4,6 +4,8 @@ import SelectNumPage from './pages/SelectNumPage';
 import Review from './pages/Review';
 import Error from './pages/Error';
 import Login from './pages/Login';
+import History from './pages/History';
+import HistoryAdmin from './pages/HistoryAdmin';
 
 const routes = [
     { path: '/', component: Home },
@@ -11,7 +13,9 @@ const routes = [
     { path: '/buy', component: SelectNumPage },
     { path: '/payment-method', component: ChoosePayment },
     { path: '/review', component: Review },
-    { path: '/error', component: Error }
+    { path: '/error', component: Error },
+    { path: '/history', component: History },
+    { path: '/history-admin', component: HistoryAdmin }
 ];
 
 export { routes };

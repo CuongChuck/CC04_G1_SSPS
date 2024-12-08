@@ -1,0 +1,63 @@
+.history-admin-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-admin-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
+
+.history-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px; /* Cỡ chữ cho bảng */
+}
+
+.history-admin-table th,
+.history-admin-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-admin-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #555;
+}
+
+.history-admin-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.history-admin-table .status.thanh-cong {
+  font-weight: bold;
+}
+
+.history-admin-table .status.that-bai {
+  font-weight: bold;
+}
+
+.history-admin-table .status.dang-xu-ly {
+  font-weight: bold;
+}
+
