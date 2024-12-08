@@ -63,18 +63,18 @@ const PaperManager = () => {
 
   return (
     <div className="container">
-      <h1>Paper Management System</h1>
+      <h1>Hệ thống quản lý giấy </h1>
 
       {/* List of Paper Types */}
       <div className="list-container">
-        <h2>Paper Types</h2>
+        <h2>Loại giấy</h2>
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Sheets in Storage</th>
-              <th>Price</th>
-              <th>Actions</th>
+              <th>Tên</th>
+              <th>Số tờ giấy còn</th>
+              <th>Giá</th>
+              <th>Hành động</th>
             </tr>
           </thead>
           <tbody>
@@ -84,9 +84,9 @@ const PaperManager = () => {
                 <td>{paper.sheets}</td>
                 <td>{paper.price}đ</td>
                 <td>
-                  <button onClick={() => handleEdit(index)}>Edit</button>
+                  <button onClick={() => handleEdit(index)}>Chỉnh sửa</button>
                   <button onClick={() => handleDeletePaper(paper.id)}>
-                    Delete
+                    Xoá
                   </button>
                 </td>
               </tr>
@@ -97,19 +97,19 @@ const PaperManager = () => {
 
       {/* Add/Edit Paper Form */}
       <div className="form-container">
-        <h2>{editingIndex !== null ? "Edit Paper" : "Add New Paper"}</h2>
+        <h2>{editingIndex !== null ? "Chỉnh sửa" : "Thêm giấy"}</h2>
         <div className="form">
           <input
             type="text"
             name="name"
-            placeholder="Paper Name"
+            placeholder="Tên loại giấy"
             value={newPaper.name}
             onChange={handleInputChange}
           />
           <input
             type="number"
             name="sheets"
-            placeholder="Number of Sheets"
+            placeholder="Số tờ"
             value={newPaper.sheets}
             onChange={handleInputChange}
           />
@@ -117,13 +117,13 @@ const PaperManager = () => {
             type="number"
             step="0.01"
             name="price"
-            placeholder="Price"
+            placeholder="Giá"
             value={newPaper.price}
             onChange={handleInputChange}
           />
           {editingIndex !== null ? (
             <div>
-              <button onClick={handleSaveEdit}>Save Changes</button>
+              <button onClick={handleSaveEdit}>Lưu thay đổi</button>
               <button
                 onClick={() => {
                   setEditingIndex(null);
@@ -134,7 +134,7 @@ const PaperManager = () => {
               </button>
             </div>
           ) : (
-            <button onClick={handleAddPaper}>Add Paper</button>
+            <button onClick={handleAddPaper}>Thêm giấy</button>
           )}
         </div>
       </div>
