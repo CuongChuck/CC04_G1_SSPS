@@ -6,7 +6,7 @@ const Admin = () => {
     const navigate = useNavigate();
     return (
         <div>
-            <div className="block" onClick={() => {navigate('/history-admin')}>
+            <div className="block" onClick={() => {navigate('/history-admin')}}>
                 Quản lý lịch sử giao dịch
             </div>
             <div className="block">Quản lý giấy</div>
