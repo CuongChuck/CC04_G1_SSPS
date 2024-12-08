@@ -1,0 +1,59 @@
+.verify-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.verify-title {
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.verify-req {
+  font-size: 1.15em;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.otp-type {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.type-item {
+  height: 100px;
+  width: 70px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 3em;
+  padding: 0;
+  text-align: center;
+  caret-color: black;
+}
+
+.type-item::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translateY(10px);
+}
+
+.cont-btn {
+  position: absolute;
+  bottom: 10%;
+  width: 50%;
+  height: 10%;
+  left: 25%;
+  font-size: 1.5em;
+  background-color: #0f6cbf;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px #bbb;
+}
