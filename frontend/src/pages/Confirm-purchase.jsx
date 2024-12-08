@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Back from "../components/Back";
 import "./Confirm-purchase.css";
-import hcmutLogo from "../assets/HCMUT_official_logo.png";
+import hcmutLogo from "../assets/HCMUT.svg";
 import Continue from "../components/Continue";
 
 const ConfirmPurchase = ({ setProgIndex }) => {
