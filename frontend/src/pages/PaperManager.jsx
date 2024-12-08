@@ -82,7 +82,7 @@ const PaperManager = () => {
               <tr key={paper.id}>
                 <td>{paper.name}</td>
                 <td>{paper.sheets}</td>
-                <td>${paper.price.toFixed(2)}</td>
+                <td>{paper.price}đ</td>
                 <td>
                   <button onClick={() => handleEdit(index)}>Edit</button>
                   <button onClick={() => handleDeletePaper(paper.id)}>
