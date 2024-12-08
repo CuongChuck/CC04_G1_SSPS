@@ -5,8 +5,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ChatRoundedIcon from '@mui/icons-material/ChatRounded';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
+    const navigate = useNavigate();
     return (
         <div className='NavBarContainer'>
             <IconButton
@@ -27,7 +29,11 @@ const NavBar = () => {
             <div className='IconContainer'>
                 <NotificationsIcon fontSize='large' style={{display:'flex', color:'#CED4DA'}} />
                 <ChatRoundedIcon fontSize='large' style={{color:'#CED4DA'}} />
-                <AccountCircleIcon fontSize='large' style={{color:'#CED4DA'}} />
+                <AccountCircleIcon
+                    fontSize='large'
+                    style={{color:'#CED4DA'}}
+                    onClick={() => {navigate('/login')}}
+                />
             </div>
         </div>
     )
