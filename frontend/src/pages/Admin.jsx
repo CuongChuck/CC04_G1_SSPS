@@ -9,7 +9,7 @@ const Admin = () => {
             <div className="block" onClick={() => {navigate('/history-admin')}}>
                 Quản lý lịch sử giao dịch
             </div>
-            <div className="block">Quản lý giấy</div>
+            <div className="block" onClick={() => {navigate('/PaperManager')}}>Quản lý giấy</div>
         </div>
     )
 }
