@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Back from "../components/Back";
-import "./confirm-purchase.css";
+import "./Confirm-purchase.css";
 import hcmutLogo from "../assets/HCMUT_official_logo.png";
 import Continue from "../components/Continue";
 
