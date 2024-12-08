@@ -9,6 +9,8 @@ import HistoryAdmin from './pages/HistoryAdmin';
 import LoginRole from './pages/LoginRole';
 import LoginAdmin from './pages/LoginAdmin';
 import Admin from './pages/Admin';
+import ConfirmPurchase from "./pages/confirm-purchase";
+import OtpVerify from "./pages/otp-verifying";
 
 const routes = [
     { path: '/', component: Home },
@@ -18,6 +20,8 @@ const routes = [
     { path: '/login', component: Login },
     { path: '/buy', component: SelectNumPage },
     { path: '/payment-method', component: ChoosePayment },
+    { path: "/confirm-purchase", component: ConfirmPurchase },
+    { path: "/otp-verify", component: OtpVerify },
     { path: '/review', component: Review },
     { path: '/error', component: Error },
     { path: '/history', component: History },
