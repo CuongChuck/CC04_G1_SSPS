@@ -8,7 +8,7 @@ const SelectNumPage = () => {
     return (
         <div>
             <div className="container">
-                <h3>BẠN CẦN MUA BAO NHIÊU TỜ GIẤY?</h3>
+                <h3 className='numpage'>BẠN CẦN MUA BAO NHIÊU TỜ GIẤY?</h3>
                 <p className='choose'>Chọn số tờ</p>
                 <form>
                     <input type="number" min={1} max={30} value={page}

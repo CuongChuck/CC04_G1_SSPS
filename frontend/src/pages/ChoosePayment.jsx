@@ -11,7 +11,7 @@ const ChoosePayment = () => {
         <div>
             <Back link={'/buy'} />
             <div className="container">
-                <h3>CHỌN PHƯƠNG THỨC THANH TOÁN</h3>
+                <h3 className='method'>CHỌN PHƯƠNG THỨC THANH TOÁN</h3>
                 <div className="box-container">
                     <a className="box" href='https://www.momo.vn/' target='_blank'>
                         <img alt='Momo' src={momo} />

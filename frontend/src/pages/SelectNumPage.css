@@ -3,7 +3,7 @@
     margin: auto;
 }
 
-h3 {
+.numpage {
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
@@ -19,15 +19,13 @@ input {
     margin-bottom: 30px;
 }
 
-p {
-    color: #0F6CBF;
-}
-
 .choose {
+    color: #0F6CBF;
     font-weight: 500;
 }
 
 .result {
+    color: #0F6CBF;
     font-weight: 700;
 }
 

@@ -10,12 +10,12 @@ const Login = () => {
             <Back link={'/'} />
             <div className="container">
                 <div>
-                    <h3>Đăng nhập</h3>
-                    <img alt='HCMUT' src={bk} class="center" />
+                    <h3 className='login'>Đăng nhập</h3>
+                    <img alt='HCMUT' src={bk} className='bklogin' />
                     <form style={{marginBottom:'40px', marginTop:'40px'}}>
-                        <p>Tên đăng nhập</p>
+                        <p className='choose'>Tên đăng nhập</p>
                         <input type="text" />
-                        <p>Mật khẩu</p>
+                        <p className='choose'>Mật khẩu</p>
                         <input type="password" />
                     </form>
                     <Continue link={'/'} />
