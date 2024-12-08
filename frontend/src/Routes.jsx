@@ -8,6 +8,7 @@ import History from './pages/History';
 import HistoryAdmin from './pages/HistoryAdmin';
 import LoginRole from './pages/LoginRole';
 import LoginAdmin from './pages/LoginAdmin';
+import PaperManager from './pages/PaperManager';
 import Admin from './pages/Admin';
 import ConfirmPurchase from "./pages/confirm-purchase";
 import OtpVerify from "./pages/otp-verifying";
