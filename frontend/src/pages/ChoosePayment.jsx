@@ -24,7 +24,7 @@ const ChoosePayment = () => {
                         <img alt='VNPAY' src={vnpay} />
                     </a>
                 </div>
-                <Continue link={'/payment'} />
+                <Continue link={'/confirm-purchase'} />
             </div>
         </div>
     )
