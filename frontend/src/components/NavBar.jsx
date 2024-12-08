@@ -32,7 +32,7 @@ const NavBar = () => {
                 <AccountCircleIcon
                     fontSize='large'
                     style={{color:'#CED4DA'}}
-                    onClick={() => {navigate('/login')}}
+                    onClick={() => {navigate('/login/role')}}
                 />
             </div>
         </div>

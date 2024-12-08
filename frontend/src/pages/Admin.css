@@ -1,0 +1,11 @@
+.block {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #0F6CBF;
+    height: 50px;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 10px;
+}

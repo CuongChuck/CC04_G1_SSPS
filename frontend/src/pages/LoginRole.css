@@ -1,0 +1,14 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.role {
+    background-color: #008196;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 30px;
+    width: 50%;
+}
