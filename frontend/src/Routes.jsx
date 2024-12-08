@@ -22,6 +22,7 @@ const routes = [
     { path: '/payment-method', component: ChoosePayment },
     { path: "/confirm-purchase", component: ConfirmPurchase },
     { path: "/otp-verify", component: OtpVerify },
+    { path: "/paper-manage", component: PaperManager },
     { path: '/review', component: Review },
     { path: '/error', component: Error },
     { path: '/history', component: History },
