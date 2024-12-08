@@ -6,8 +6,8 @@
 .numpage {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
-    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-top: 40px;
     font-size: 25px;
     font-weight: 900;
 }
@@ -36,5 +36,18 @@ input {
     height: 40px;
     font-size: 20px;
     border: 3px solid #0F6CBF;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    width: 150px;
+}
+
+.papers {
+    display: flex;
+    gap: 100px;
+    margin-bottom: -10px;
+}
+
+.sum {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -40px;
 }
