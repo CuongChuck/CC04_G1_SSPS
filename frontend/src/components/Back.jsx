@@ -26,7 +26,7 @@ const ResponsiveReturnBlock = ({link}) => {
             <div style={{
                 fontSize: isComputer ? '28px' : '21px'
             }}>
-                Back
+                Trở về
             </div>
         </div>
     );
