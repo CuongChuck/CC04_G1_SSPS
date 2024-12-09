@@ -21,10 +21,11 @@
     display: flex;
     border-radius: 3px;
 }
-    .IconContainer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 70%;
-        gap: 30px;
-    }
+.IconContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    gap: 30px;
+    cursor: pointer;
+}

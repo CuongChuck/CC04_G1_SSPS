@@ -28,7 +28,7 @@ const NavBar = () => {
             <a className="NavLink" href='/buy'>MUA GIẤY</a>
             <div className='IconContainer'>
                 <NotificationsIcon fontSize='large' style={{display:'flex', color:'#CED4DA'}} />
-                <ChatRoundedIcon fontSize='large' style={{color:'#CED4DA'}} />
+                <ChatRoundedIcon fontSize='large' style={{color:'#CED4DA'}} onClick={() => {navigate('/history')}}/>
                 <AccountCircleIcon
                     fontSize='large'
                     style={{color:'#CED4DA'}}
