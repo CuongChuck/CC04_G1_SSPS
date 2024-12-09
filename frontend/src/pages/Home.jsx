@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css"; // Import CSS file
-import bkImage from "../assets/bk.jpg"; // Import hình ảnh
+import bkImage from "../assets/bk.png"; // Import hình ảnh
 
 const Home = () => {
   return (
