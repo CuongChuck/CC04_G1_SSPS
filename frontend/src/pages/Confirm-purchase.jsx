@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Back from "../components/Back";
 import "./Confirm-purchase.css";
 import hcmutLogo from "../assets/HCMUT.svg";
@@ -11,11 +11,35 @@ const ConfirmPurchase = ({ setProgIndex }) => {
     setOtpActive(butn);
   };
 
-  const handleClickConfirm = () => {
-    setUnderProgClass("highlighted");
-    incrementProgIndex();
+  const [generatedId, setGeneratedId] = useState("");
+
+  const [currentDate, setCurrentDate] = useState("");
+  const generateId = () => {
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let result = "";
+    for (let i = 0; i < 10; i++) {
+      result += characters.charAt(
+        Math.floor(Math.random() * characters.length)
+      );
+    }
+    return result;
   };
 
+  const generateDate = () => {
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0"); // Months are 0-based
+    const year = now.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
+  useEffect(() => {
+    const newId = generateId();
+    const today = generateDate();
+    setGeneratedId(newId);
+    setCurrentDate(today);
+  }, []);
   const numberOfPage = 20;
   const pricePerPage = 400;
   const subTotalCost = numberOfPage * pricePerPage;
@@ -37,11 +61,11 @@ const ConfirmPurchase = ({ setProgIndex }) => {
           </div>
           <div className="date">
             <div className="text">NGÀY GIAO DỊCH</div>
-            <input type="text" placeholder="NGÀY/THÁNG/NĂM" />
+            <input type="text" value={currentDate} readOnly />
           </div>
           <div className="tid">
             <div className="text">MÃ GIAO DỊCH</div>
-            <input type="text" />
+            <input type="text"  value={generatedId} readOnly/>
           </div>
         </div>
         <div className="line"></div>
