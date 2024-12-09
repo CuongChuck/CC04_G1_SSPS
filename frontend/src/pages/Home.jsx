@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import "./Home.css"; // Import CSS file
+import bkImage from "../assets/bk.jpg"; // Import hình ảnh
 
 const Home = () => {
-    return (
-        <div>TRƯỜNG ĐẠI HỌC BÁCH KHOA - ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH</div>
-    )
-}
+  return (
+    <div className="home-container">
+      <img src={bkImage} alt="BK University" className="full-screen-image" />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
