@@ -24,6 +24,7 @@
   justify-content: space-evenly;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 200px;
 }
 
 .type-item {
