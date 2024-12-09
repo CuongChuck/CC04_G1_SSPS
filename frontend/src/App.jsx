@@ -6,7 +6,7 @@ import { routes } from './Routes';
 
 function App() {
     return (
-        <div>
+        <div className="html-container">
             <NavBar />
             <Routes>
                 {routes.map((route, index) => {
